@@ -20,9 +20,9 @@ def save_words_to_file(words, output_file):
             file.write(word + '\n')
 
 def extract_words_from_text(text):
-    text = re.sub(r'[0-9.,]', '', text)  # Remove digits and certain punctuation
-    text = re.sub(r'[^஀-௿\s]', '', text)  # Remove non-Tamil characters
-    words = text.split()  # Split into words
+    text = re.sub(r'[0-9.,]', '', text)  
+    text = re.sub(r'[^஀-௿\s]', '', text)  
+    words = text.split()  
     return words
 
 
