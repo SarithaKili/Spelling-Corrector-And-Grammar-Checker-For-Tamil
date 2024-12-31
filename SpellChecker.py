@@ -2,8 +2,8 @@ import re
 from collections import Counter
 from typing import List
 
-from Levenshtein import distance as lev  
-from Levenshtein import prefix_match, suffix_match
+from levenshtein_utils import lev  
+from levenshtein_utils import prefix_match, suffix_match
 
 
 def prefilter_candidates(user_input, correct_words, length_threshold=2):
