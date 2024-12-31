@@ -1,6 +1,6 @@
 from sklearn.metrics import precision_score, recall_score, f1_score
 
-def evaluate_spell_checker(test_sentences, expected_corrections, corrected_sentence):
+def evaluator(test_sentences, expected_corrections, corrected_sentence):
     TP = 0  
     FP = 0  
     FN = 0  
